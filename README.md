@@ -37,3 +37,5 @@ Abrir o projeto no IntelliJ e correr a classe App.
 ## Tecnologias
 
 Java 17, Maven e JUnit.
+
+Ver tambem o ficheiro notas-git.md.
