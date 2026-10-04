@@ -29,3 +29,7 @@ Correspondem ao porta-aviões, navio de 4 canhões, navio de 3 canhões, navio d
 - O adversário diz o resultado: se acertou em algum navio (e de que tipo) ou se foi à água.
 - Quando todas as posições de um navio são atingidas, o navio está afundado.
 - Ganha quem afundar primeiro todos os navios do adversário.
+
+## Como correr
+
+Abrir o projeto no IntelliJ e correr a classe App.
