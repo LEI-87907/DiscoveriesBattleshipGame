@@ -1,0 +1,21 @@
+name: Notificar revisor do PR
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentar no pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          AUTOR: ${{ github.event.pull_request.user.login }}
+          REVISOR: ${{ github.repository_owner }}
+        run: |
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" \
+            --body "@$REVISOR há um pull request novo de @$AUTOR à espera de revisão."
