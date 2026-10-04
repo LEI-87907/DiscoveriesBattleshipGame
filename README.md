@@ -33,3 +33,7 @@ Correspondem ao porta-aviões, navio de 4 canhões, navio de 3 canhões, navio d
 ## Como correr
 
 Abrir o projeto no IntelliJ e correr a classe App.
+
+## Tecnologias
+
+Java 17, Maven e JUnit.
